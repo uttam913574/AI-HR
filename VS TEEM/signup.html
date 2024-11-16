@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login-Page</title>
     <link rel="stylesheet" href="login-signup.css">
 </head>
 
@@ -14,53 +14,67 @@
             <nav class="nav-bar">
                 <div class="logo">Logo</div>
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Interview</li>
-                    <li>Communtiy</li>
-                    <li>ProgressTracker</li>
-                    <li>Porfile/Setting</li>
-                    <li>Login/SignUp</li>
+                    <li><button id="home">Home</button></li>
+                    <li><button id="about-btn">About Us</button></li>
+                    <li><button id="interview">Interview</button></li>
+                    <li><button id="community">Community</button></li>
+                    <li><button id="progressTracker">ProgressTracker</button></li>
+                    <li><button id="login"><a href="loginPage.html">Login/SignUp</a></button></li>
                 </ul>
             </nav>
         </header>
+        <section class="About-us hide">
+
+            <div class="msg hide">
+                <h1>About Us</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos iste odit aliquid iure. Inventore
+                nemo, deserunt dolores illo nam odit molestias adipisci ducimus, rerum earum, laudantium vel
+                reprehenderit quis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur doloremque temporibus
+                repudiandae provident adipisci alias quam aspernatur in officiis? Possimus ea sequi repudiandae
+                recusandae unde dolor at assumenda. Voluptas.
+            </div>
+        </section>
         <main>
             <div class="heading">
                 <h1>My Account</h1>
                 <h3>Your AI-Powered Interview Assistant</h3>
-            </div>
-            <div class="sign-up-login-btn">
-                <label>Signup</label>
-                <div class="toggle-btn">
-                    <input type="checkbox" id="toggle">
-                    <label for="toggle" class="toggle-switch"></label>
+                <div class="sign-up-login-btn">
+                    <label id="to-singup">Signup</label>
+                    <div class="toggle-btn">
+                        <input type="checkbox" id="toggle">
+                        <label for="toggle" class="toggle-switch"></label>
+                    </div>
+                    <label id="to-login">Login</label>
                 </div>
-                <label>Login</label>
-            </div>
-            <div class="comtainer-signup">
-                <h1>Create Your Account </h1>
-                <div class="submit-login-with">
-                    <p>Sign Up With:</p>
-                    <a href="#">Google</a> <a href="#">Facebook</a>
-                </div>
-                <p>Or</p>
-                <div class="login">
-                    <input type="text" placeholder="Enter Your Full Name" id="Username">
-                    <input type="password" placeholder="Enter Email Address..." id="password">
-                    <select name="" id="" >
-                        <option value="">---Select User Type---</option>
-                        <option value="">Student</option>
-                        <option value="">Web Developer</option>
-                        <option value="">Software Engineer</option>
-                        <option value="">Application developer</option>
+                <div class="comtainer-signup">
+                    <h1>Create Your Account </h1>
+                    <div class="submit-login-with">
+                        <b>sign up using</b>
+                        <a href="http//google.com"><img class="icone" src="icons/google.png" alt="Google"></a> 
+                        <a href="http//fecbook.com" ><img class="icone" src="icons/facebook.png" alt="Google"></a> 
+                    </div>
+                    <h3>or</h3>
+                    <form action="#">
+                        <div class="login ">
+                            <input type="text" placeholder="Enter Your Full Name" id="Username" required>
+                            <input type="password" placeholder="Enter Email Address..." id="password" required>
+                            <select name="" id="">
+                                <option value="">---Select User Type---</option>
+                                <option value="">Student</option>
+                                <option value="">Web Developer</option>
+                                <option value="">Software Engineer</option>
+                                <option value="">Application developer</option>
 
-                    </select>
-                    <input type="password" placeholder="Enter Your Password" id="password">
-                </div>
-                <button class="submit">Submit</button>
-            </div>
+                            </select>
+                            <input type="password" placeholder="Enter Your Password" id="password" required>
+                        </div>
+                        <button class="submit">Submit</button>
+                    </form>
+                    </div>
         </main>
     </section>
+    <script src="script.js"></script>
     <footer>
         <h1>footer</h1>
     </footer>

@@ -4,16 +4,17 @@
 }
 body{
     margin: 5px;
-    background-color: #d9d6d6;
+    background-color:#1abc9c;
 }
 .page{
+    color: #2C3E50;
     background-color:white;
     height: 100%;
     margin: 50px 25px 0px 25px;
     border-bottom:3px solid #330080 ;
 }
 header{
-    background-color:white;
+    background-color:#2C3E50;
     position: sticky;
     top: 0;
 }
@@ -31,19 +32,56 @@ header{
     border: 1px solid black;
     border-radius:65%;
     padding: 15px;
+    background-color: white;    
+    box-shadow: 0px 2px 15px 0px white;
 }
-ul{
+.nav-bar ul{      
+    width: 80vw;
+    padding: 4px;
+    border-radius: 12px;
+    background-color: white;    
+    box-shadow: 0px 2px 15px 0px white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+    justify-content: space-evenly;
     list-style: none;
+}
+.nav-bar ul li{
+    width: 25px;
+}
+.nav-bar ul li button a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+.nav-bar ul li button a:hover{
+    color: white;
+    background-color: #f39c12;
+}
+.nav-bar ul li button{
+    text-decoration: none;
+    width: 121px;
+    cursor: pointer;
+    color: #2c3e50;
+    background-color:#1abc9c;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 9px;
+}
+.nav-bar ul li button:hover{
+    transform:scale(1,1.3);
+    color: white;
+    background-color: #f39c12;
+}
+.icone{
+    width: 20px;
 }
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.signup-label{
+    background-color: red;
 }
 .toggle-btn input{
     display:none;
@@ -61,8 +99,12 @@ main{
     justify-content: center;
     align-items: center;
 }
+.heading h1{
+    font-family: oswald;
+}
 .heading h1,h3{
     font-size: 3em;
+    text-align: center;
     padding: 25px;
     font-weight: bold;
 }
@@ -79,7 +121,7 @@ main{
     background:lightgreen ;
     border-radius: 20px;
     cursor: pointer;
-    transition:0.5s linear;
+    transition:0.6s linear;
 }
 .toggle-btn .toggle-switch::before{
     position: absolute;
@@ -90,7 +132,7 @@ main{
     background:#330080;
     border-radius:50%;
     left: 2px;
-    transition: left 0.3s linear;
+    transition: left 0.6s linear;
 }
 .toggle-btn input:checked + label{
     background:lightblue;
@@ -135,13 +177,13 @@ main{
     padding: 22px;
 }
 .login input,select{
-    width: 150%;
+    width: 113%;
     padding: 11px;
     border-color: #330080;
     border-radius: 12px;
 }
 .login select{
-    width: 165%;
+    width: 127%;
     padding: 11px;
     border:2px solid #330080;
     border-radius: 12px;
@@ -168,6 +210,7 @@ main{
 .submit-login-with{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .submit{
     color: white;
@@ -178,4 +221,13 @@ main{
 }
 footer{
     text-align:center;
+}
+.About-us{
+    margin-left: 20vw;
+    text-align: center;
+    width: 60vw;
+    border:5px solid black;
+}
+ .hide {
+    display: none;
 }
