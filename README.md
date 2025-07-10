@@ -1,6 +1,8 @@
 My AI HR - Interview Assistant Dashboard
 Welcome to My AI HR, a simple web-based interface designed to simulate a virtual AI-powered interview experience. This project includes a user-friendly dashboard and a login/signup page, suitable for showcasing front-end skills like HTML and CSS.
 
+
+
 🚀 Features
 🎙️ AI HR Window: Central display for interacting with your AI assistant.
 📊 Progress Tracker: Placeholder for user progress.
@@ -13,6 +15,9 @@ Welcome to My AI HR, a simple web-based interface designed to simulate a virtual
 HTML5
 CSS3
 JavaScript
+
+
+
 ![pic1](https://github.com/user-attachments/assets/84e9952f-0123-48bd-a8c6-add1bffe66f4)
 ![pic2](https://github.com/user-attachments/assets/2cbe0646-c4dd-4b67-965e-3359bc763a6a)
 ![pic3](https://github.com/user-attachments/assets/8e6846b8-ad00-4fc7-9a17-34e8eb4e092a)
